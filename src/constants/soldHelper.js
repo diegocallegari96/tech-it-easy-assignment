@@ -1,5 +1,5 @@
-import {bestSellingTv} from "./inventory.js";
-// import {inventory} from "./inventory.js"
+
+
 
 export function totalSold(inventory) {
     let total = 0;
@@ -8,5 +8,5 @@ export function totalSold(inventory) {
             total += inventory[i].sold
         }
     }
-    return total + bestSellingTv.sold;
+    return total
 }
