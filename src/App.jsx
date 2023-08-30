@@ -1,10 +1,20 @@
 import './App.css';
-import totalSold from './constants/soldHelper.js'
-function App() {
+import {inventory} from "./inventory.js"
+import {totalSold} from "./constants/soldHelper.js";
+
+export default function App() {
   return (
-    <h1>TEST</h1>
+      <div>
+        <div className="tile green">
+          <p>Aantal verkochte producten</p>
+          <span>{totalSold(inventory)}</span>
+        </div>
+        <div className="tile blue">
+
+        </div>
+        <div className="tile orange">
+
+        </div>
+      </div>
   )
 }
-
-
-export default App
