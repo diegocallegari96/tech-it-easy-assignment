@@ -1,5 +1,5 @@
 import {bestSellingTv} from "./inventory.js";
-import {inventory} from "./inventory.js"
+// import {inventory} from "./inventory.js"
 
 export function totalSold(inventory) {
     let total = 0;

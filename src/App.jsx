@@ -1,5 +1,5 @@
 import './App.css';
-import {inventory} from "./inventory.js"
+import {inventory} from "./constants/inventory.js"
 import {totalSold} from "./constants/soldHelper.js";
 
 export default function App() {
