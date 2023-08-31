@@ -1,9 +1,47 @@
+.productbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
 .tile-green {
     color: darkgreen;
+    box-sizing: border-box;
+    width: 300px;
+    height: 300px;
+    border: 2px solid darkgreen;
+    background: lightgreen;
+    margin: 20px;
+
 }
 .tile-blue {
     color: darkblue;
+    box-sizing: border-box;
+    width: 300px;
+    height: 300px;
+    border: 2px solid darkblue;
+    background: lightblue;
+    margin: 20px;
 }
 .tile-red {
     color: darkred;
+    box-sizing: border-box;
+    width: 300px;
+    height: 300px;
+    border: 2px solid darkred;
+    background: indianred;
+    margin: 20px;
+}
+.bestSellingTV {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    width: 95%;
+    height: 300px;
+    border: 2px solid black;
+    margin: 20px;
+}
+.tvPicture {
+    width: 100px;
+    height: 80px;
 }

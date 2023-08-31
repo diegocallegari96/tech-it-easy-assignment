@@ -10,6 +10,8 @@ import {buttonHelper} from "./constants/buttonHelper.js";
 export default function App() {
   return (
       <div>
+          <h1>Tech it easy dashboard</h1>
+       <div className="productbox">
         <div className="tile-green">
           <p>Aantal verkochte producten</p>
           <span>{totalSold(inventory)}</span>
@@ -22,9 +24,10 @@ export default function App() {
           <p>Aantal te verkopen producten</p>
           <span>{leftToSell(inventory)}</span>
         </div>
-          <div>
+       </div>
+          <div className="bestSellingTV">
                       <div>
-                          <img src={bestSellingTv.sourceImg} className="" />
+                          <img src={bestSellingTv.sourceImg} className="tvPicture" />
                           {generateTelevisionTitle(bestSellingTv)}
                       </div>
                       <div>
@@ -41,9 +44,7 @@ export default function App() {
                               </React.Fragment>
                           )}
                       </div>
-                      <button onClick={ () => buttonHelper('Meest verkocht eerst')}>Meest verkocht eerst</button>
-                      <button onClick={ () => buttonHelper('Goedkoopste eerst')}>Goedkoopste eerst</button>
-                      <button onClick={ () => buttonHelper('Meest geschikt voor sport eerst')}>Meest geschikt voor sport eerst</button>
+
               {/*{inventory.map((television, key) => (*/}
               {/*    <React.Fragment key={key}>*/}
               {/*        <div>*/}
@@ -57,6 +58,11 @@ export default function App() {
               {/*        </div>*/}
               {/*    </React.Fragment>*/}
               {/*))}*/}
+          </div>
+          <div>
+              <button onClick={ () => buttonHelper('Meest verkocht eerst')}>Meest verkocht eerst</button>
+              <button onClick={ () => buttonHelper('Goedkoopste eerst')}>Goedkoopste eerst</button>
+              <button onClick={ () => buttonHelper('Meest geschikt voor sport eerst')}>Meest geschikt voor sport eerst</button>
           </div>
 
       </div>
