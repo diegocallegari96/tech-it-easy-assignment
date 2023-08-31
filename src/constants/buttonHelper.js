@@ -1,3 +1,3 @@
-export function mostSold(message) {
+export function buttonHelper(message) {
     console.log(message)
 }

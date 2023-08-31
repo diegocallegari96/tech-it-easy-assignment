@@ -6,7 +6,7 @@ import {totalBought} from "./constants/boughtHelper.js";
 import {leftToSell} from "./constants/leftToSellHelper.js";
 import {generateTelevisionTitle, addEuroSign} from "./constants/tvOptions.js";
 import {generateTelevisionSizeString} from "./constants/inchToCm.js";
-import {mostSold} from "./constants/buttonHelper.js";
+import {buttonHelper} from "./constants/buttonHelper.js";
 export default function App() {
   return (
       <div>
@@ -41,9 +41,9 @@ export default function App() {
                               </React.Fragment>
                           )}
                       </div>
-                      <button onClick={ () => mostSold('Meest verkocht eerst')}>Meest verkocht eerst</button>
-                      <button onClick={ () => mostSold('Goedkoopste eerst')}>Goedkoopste eerst</button>
-                      <button onClick={ () => mostSold('Meest geschikt voor sport eerst')}>Meest geschikt voor sport eerst</button>
+                      <button onClick={ () => buttonHelper('Meest verkocht eerst')}>Meest verkocht eerst</button>
+                      <button onClick={ () => buttonHelper('Goedkoopste eerst')}>Goedkoopste eerst</button>
+                      <button onClick={ () => buttonHelper('Meest geschikt voor sport eerst')}>Meest geschikt voor sport eerst</button>
               {/*{inventory.map((television, key) => (*/}
               {/*    <React.Fragment key={key}>*/}
               {/*        <div>*/}
