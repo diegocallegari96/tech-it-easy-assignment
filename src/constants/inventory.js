@@ -328,4 +328,23 @@ export let inventory = [
     },
 ];
 
+// opdracht 2 -- 1a
+const items = inventory.map((item) => {
+    return item.type;
+});
+console.log(items);
 
+// opdracht 2 -- 1b
+
+const sells = inventory.map((sell) => {
+    if (sell.originalStock <= sell.sold) {
+        return sell.type;
+    }
+});
+console.log(sells);
+
+// opdracht 2 -- 1c
+const tvTypes = inventory.find((tvType) => {
+    return tvType.type === 'NH3216SMART';
+});
+console.log(tvTypes);

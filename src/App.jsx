@@ -25,6 +25,7 @@ export default function App() {
           <span>{leftToSell(inventory)}</span>
         </div>
        </div>
+          <div><h3>Best verkochte tv</h3></div>
           <div className="bestSellingTV">
                       <div>
                           <img src={bestSellingTv.sourceImg} className="tvPicture" />
