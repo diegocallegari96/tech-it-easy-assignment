@@ -37,11 +37,28 @@
     justify-content: space-evenly;
     box-sizing: border-box;
     width: 95%;
-    height: 300px;
+    height: 200px;
+    border: 2px dashed black;
+    background: whitesmoke;
+    margin: 20px;
+}
+.listOfAllTvs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    width: 95%;
+    height: 200px;
     border: 2px solid black;
     margin: 20px;
 }
 .tvPicture {
-    width: 100px;
-    height: 80px;
+    width: 200px;
+    height: 150px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.logos {
+    width: 16px;
+    height: 16px;
 }

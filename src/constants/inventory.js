@@ -1,4 +1,6 @@
 // BEST VERKOPENDE TV
+
+
 export const bestSellingTv = {
     type: 'UHD 55AU7040',
     name: 'Crystal',
@@ -328,23 +330,43 @@ export let inventory = [
     },
 ];
 
-// opdracht 2 -- 1a
-const items = inventory.map((item) => {
-    return item.type;
-});
-console.log(items);
+// // opdracht 2 -- 1a
+// const items = inventory.map((item) => {
+//     return item.type;
+// });
+// console.log(items);
 
-// opdracht 2 -- 1b
+// // opdracht 2 -- 1b
+//
+// const sells = inventory.map((sell) => {
+//     if (sell.originalStock <= sell.sold) {
+//         return sell.type;
+//     }
+// });
+// console.log(sells);
 
-const sells = inventory.map((sell) => {
-    if (sell.originalStock <= sell.sold) {
-        return sell.type;
-    }
-});
-console.log(sells);
+// // opdracht 2 -- 1c
+// const tvTypes = inventory.find((tvType) => {
+//     return tvType.type === 'NH3216SMART';
+// });
+// console.log(tvTypes);
 
-// opdracht 2 -- 1c
-const tvTypes = inventory.find((tvType) => {
-    return tvType.type === 'NH3216SMART';
-});
-console.log(tvTypes);
+
+// // opdracht 2 -- 1d
+// const suitableTvs = inventory
+//     .map(suitableTv => ({
+//     name: `${suitableTv.brand} ${suitableTv.name}`,
+//     suitable: suitableTv.refreshRate >= 100
+// }));
+//
+// console.log(suitableTvs)
+
+
+// // opdracht 2 -- 1e
+// let screenSizes = inventory.filter((screenSize) => {
+//     return screenSize.availableSizes.includes(65);
+// });
+// console.log(screenSizes)
+
+
+//opdracht 2 -- 1f
