@@ -42,7 +42,7 @@
     background: whitesmoke;
     margin: 20px;
 }
-.listOfAllTvs {
+.listOfAllTv {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -51,6 +51,11 @@
     height: 200px;
     border: 2px solid black;
     margin: 20px;
+}
+.listOfAllTvs {
+    display: flex;
+    /*flex-direction: column;*/
+    text-align: center;
 }
 .tvPicture {
     width: 200px;

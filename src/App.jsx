@@ -59,24 +59,19 @@ export default function App() {
           </div>
           {inventory.map((television, key) => (
               <React.Fragment key={key}>
-                  <div className="listOfAllTvs" >
-                  <div>
-                      <img src={inventory.sourceImg} alt={"TV"} className="tvPicture" />
+
+                      <div className="listOfAllTv" >
+                          <img src={inventory.sourceImg} alt={"TV"} className="tvPicture" />
+                  <div className='listOfAllTvs'>
                       {generateTelevisionTitle(television)}
-                  </div>
-                  <div>
                       {addEuroSign(television.price)}
-                  </div>
-                  <div>
                       {generateTelevisionSizeString(television)}
-                  </div>
-                  <div>
-                          {inventory[0].options.map((option, key)=>
-                              <React.Fragment key={key}>
-                                  <img src={option.applicable ? checkLogo : minusLogo} alt={""} className="logos" />
-                                  <span> {option.name} </span>
-                              </React.Fragment>
-                          )}
+                      {inventory[0].options.map((option, key)=>
+                          <React.Fragment key={key}>
+                              <img src={option.applicable ? checkLogo : minusLogo} alt={""} className="logos" />
+                              <span className='options'> {option.name} </span>
+                          </React.Fragment>
+                      )}
                   </div>
                   </div>
               </React.Fragment>
