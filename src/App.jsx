@@ -61,7 +61,7 @@ export default function App() {
               <React.Fragment key={key}>
 
                       <div className="listOfAllTv" >
-                          <img src={inventory.sourceImg} alt={"TV"} className="tvPicture" />
+                          <img src={television.sourceImg} alt={"TV"} className="tvPicture" />
                   <div className='listOfAllTvs'>
                       {generateTelevisionTitle(television)}
                       {addEuroSign(television.price)}
