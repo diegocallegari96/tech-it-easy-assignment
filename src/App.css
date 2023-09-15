@@ -1,0 +1,69 @@
+.productbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.tile-green {
+    color: darkgreen;
+    box-sizing: border-box;
+    width: 300px;
+    height: 300px;
+    border: 2px solid darkgreen;
+    background: lightgreen;
+    margin: 20px;
+
+}
+.tile-blue {
+    color: darkblue;
+    box-sizing: border-box;
+    width: 300px;
+    height: 300px;
+    border: 2px solid darkblue;
+    background: lightblue;
+    margin: 20px;
+}
+.tile-red {
+    color: darkred;
+    box-sizing: border-box;
+    width: 300px;
+    height: 300px;
+    border: 2px solid darkred;
+    background: indianred;
+    margin: 20px;
+}
+.bestSellingTV {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    width: 95%;
+    height: 200px;
+    border: 2px dashed black;
+    background: whitesmoke;
+    margin: 20px;
+}
+.listOfAllTv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    width: 95%;
+    height: 200px;
+    border: 2px solid black;
+    margin: 20px;
+}
+.listOfAllTvs {
+    display: flex;
+    /*flex-direction: column;*/
+    text-align: center;
+}
+.tvPicture {
+    width: 200px;
+    height: 150px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.logos {
+    width: 16px;
+    height: 16px;
+}
